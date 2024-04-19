@@ -22,7 +22,7 @@ function Banner(){
     
     return(
         <header style={{backgroundImage:`url("https://image.tmdb.org/t/p/original${banner.backdrop_path}")`}} className={`bg-cover center bg-center h-screen object-contain`}>
-            <div className=" min-h-screen translate-y-1/3 px-20">
+            <div className=" h-screen translate-y-1/3 px-20">
                 <h1 className="text-white text-8xl font-semibold ">{banner.name}</h1>
                 <button className="h-10 bg-gray-800 w-32 rounded-md text-white text-xl items-center">Play</button>
                 <button className="h-10 bg-gray-800 w-32 rounded-md text-white text-xl items-center m-10">My List</button>
