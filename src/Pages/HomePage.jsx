@@ -7,7 +7,7 @@ import DataBase from "../DataBase";
 
 function HomePage(){
     return(
-        <div>
+        <div className="bg-black">
             <Navbar />
             <Banner />
             <Cards title="Netflix Originals" url={DataBase.netflix}/>
