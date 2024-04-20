@@ -1,22 +1,10 @@
 import React, { useEffect, useState } from "react";
-import requests from "../Request";
 import axios from "axios";
 
 function Cards(props) {
-  const [images, setImages] = useState([]);
 
-  useEffect(() => {
-    async function getImages() {
-      try {
-        const response = await axios.get(props.url);
-        setImages(response.data.results);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    getImages();
-  }, []);
-  console.log(images)
+  const images= props.url
+
   return (
     <div className="px-5">
       <h1 className="font-bold text-white text-4xl m-5">{props.title}</h1>
