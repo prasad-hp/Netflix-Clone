@@ -10,11 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {!user ? (
           <Route path='/Login' element={<LoginScreen />} />
-        ) : (
           <Route path='/' element={<HomePage />} />
-        )}
       </Routes>
     </BrowserRouter>
   )
